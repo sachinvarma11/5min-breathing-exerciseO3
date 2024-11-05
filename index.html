@@ -1,0 +1,28 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>5 Minute Meditation</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    <div class="container">
+        <h1>5 Minute Meditation</h1>
+        <div class="timer">5:00</div>
+        <div class="breathing-text">Click Start to begin</div>
+        <div class="button-container">
+            <button id="startButton">Start Meditation</button>
+            <button id="stopButton" disabled>Stop Meditation</button>
+        </div>
+    </div>
+    <script src="script.js"></script>
+    <!-- Add multiple audio formats for better compatibility -->
+    <audio id="breathSound" preload="auto">
+        <source src="./breath-out-242642.mp3" type="audio/mpeg">
+        <source src="./breath-out-242642.wav" type="audio/wav">
+        <source src="./breath-out-242642.ogg" type="audio/ogg">
+        Your browser does not support the audio element.
+    </audio>
+</body>
+</html> 
